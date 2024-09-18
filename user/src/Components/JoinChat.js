@@ -12,7 +12,7 @@ export default function JoinChat() {
 
     try{
       const token = localStorage.getItem('authToken')
-      const response = await axios.post('http://localhost:5000/joinChat',{
+      const response = await axios.post('https://chatgroup-server.vercel.app/joinChat',{
         GroupName :GroupName,
         Passcode:Passcode,
         token : token
