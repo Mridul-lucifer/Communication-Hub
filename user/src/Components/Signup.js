@@ -10,7 +10,7 @@ export default function Signup() {
     const SignUpBackend = async function(event){
         event.preventDefault(); 
         try {
-            const response = await axios.post('http://localhost:5000/SignUp', {
+            const response = await axios.post('https://chatgroup-server.vercel.app/SignUp', {
                 Name: name,
                 Password: password
             });
