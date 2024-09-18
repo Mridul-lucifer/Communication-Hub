@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Style.css';
 
-export default function Displaychat() {
+export default function DisplayChat() {
   const [array, setArray] = useState([]);
   const [myName, setMyName] = useState("");
   const [groupName, setGroupName] = useState("");
@@ -16,8 +16,9 @@ export default function Displaychat() {
         const groupNo = localStorage.getItem('GroupNo');
 
         const response = await axios.post('https://chatgroup-server.vercel.app/getChat', {
-          token: token,
           GroupNo: groupNo
+        }, {
+          headers: { Authorization: `Bearer ${token}` } // Set the token in the header
         });
 
         console.log(response.data);
@@ -51,13 +52,12 @@ export default function Displaychat() {
       <div className='DisplayChat-container'>
         {array.map((chat, index) => (
           <div 
-            key={chat.id || index} // Use index if id is not available
+            key={index} // Using index as key for simplicity; consider a unique id if available
             className='DisplayChat-box'
           >
             {chat.Name === myName ? (
               <div className='DisplayChat-myMessage'>
                 <span className='DisplayChat-msg-yourmessage'>{chat.msg}</span>
-                {/* <span className='DisplayChat-id-you'>(You)</span> */}
               </div>
             ) : (
               <div className='DisplayChat-otherMessage'>
