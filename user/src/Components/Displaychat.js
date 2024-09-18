@@ -1,49 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import './Style.css';
-
-export default function DisplayChat() {
-  const [array, setArray] = useState([]);
-  const [myName, setMyName] = useState("");
-  const [groupName, setGroupName] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const displayChatBackend = async () => {
-      try {
-        const token = localStorage.getItem('authToken');
-        const groupNo = localStorage.getItem('GroupNo');
-
-        const response = await axios.post('https://chatgroup-server.vercel.app/getChat', {
-          GroupNo: groupNo,
-          token: token
-        });
-
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import './Style.css'
+export default function Displaychat() {
+  let [array ,setarray] = useState([]);
+  let [myName , setMyName] = useState("");
+  let [GroupName , setGroupName] = useState("");
+  useEffect(()=>{
+    const DisplayChatBackend = async () => {
+      
+      try{
+        const token = localStorage.getItem('authToken')
+        const GroupNo = localStorage.getItem('GroupNo')
+        const response = await axios.post('https://chatgroup-server.vercel.app/getChat',{
+          token:token,
+          GroupNo:GroupNo
+        })
         console.log(response.data);
-        setArray(response.data.array);
-        setMyName(response.data.Name);
-        setGroupName(response.data.GroupName);
-        setError(null); // Clear any previous error
-      } catch (error) {
-        setError("Failed to load messages. Please try again later.");
-        console.error(error);
-      } finally {
-        setLoading(false); // Set loading to false after the fetch attempt
+        setarray(response.data.array)
+        setMyName(response.data.Name)
+        setGroupName(response.data.GroupName)
+      }catch(error){
+        alert(error)
       }
-    };
-
-    displayChatBackend();
-    const intervalId = setInterval(displayChatBackend, 1000); // Fetch every 5 seconds
+    }
+    DisplayChatBackend();
+    const intervalId = setInterval(DisplayChatBackend, 1000);
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(intervalId);
-  }, []);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
+  },[]);
   return (
     <div>
       <h2 className='DisplayChat-header'>{GroupName}</h2>
