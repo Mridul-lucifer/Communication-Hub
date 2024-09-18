@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "echo 'Nothing to build'",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,7 +16,7 @@
     "cors": "^2.8.5",
     "express": "^4.20.0",
     "jsonwebtoken": "^9.0.2",
-    "nodemon": "^3.1.4",
-    "mongoose": "^7.0.0"
+    "mongoose": "^8.6.3",
+    "nodemon": "^3.1.4"
   }
 }
