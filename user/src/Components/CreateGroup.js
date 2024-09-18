@@ -10,7 +10,7 @@ export default function CreateGroup() {
     event.preventDefault();
     try{
       const token = localStorage.getItem('authToken');
-      const response = await axios.post('http://localhost:5000/createGroup',{
+      const response = await axios.post('https://chatgroup-server.vercel.app/createGroup',{
         GroupName :GroupName,
         Passcode : Passcode,
         token : token
