@@ -18,7 +18,7 @@ export default function JoinChat() {
         token : token
       })
       alert(response.data.msg+" " +response.data.msg);
-      if(response.data.GroupNo>=0){
+      if(response.data.GroupNo){
         localStorage.setItem("GroupNo" , response.data.GroupNo)
         navigate('/ChatingGroup')
       }
