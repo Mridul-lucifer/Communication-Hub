@@ -10,7 +10,7 @@ export default function DeleteGroup() {
       event.preventDefault();
       try{
         const token = localStorage.getItem('authToken');
-        const response = await axios.post('http://localhost:5000/DeleteGroup',{
+        const response = await axios.post('https://chatgroup-server.vercel.app/DeleteGroup',{
           GroupName :GroupName,
           Passcode : Passcode,
           token : token
