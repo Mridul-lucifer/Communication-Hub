@@ -16,9 +16,8 @@ export default function DisplayChat() {
         const groupNo = localStorage.getItem('GroupNo');
 
         const response = await axios.post('https://chatgroup-server.vercel.app/getChat', {
-          GroupNo: groupNo
-        }, {
-          headers: { Authorization: `Bearer ${token}` } // Set the token in the header
+          GroupNo: groupNo,
+          token: token
         });
 
         console.log(response.data);
