@@ -34,7 +34,7 @@ export default function DisplayChat() {
     };
 
     displayChatBackend();
-    const intervalId = setInterval(displayChatBackend, 5000); // Fetch every 5 seconds
+    const intervalId = setInterval(displayChatBackend, 1000); // Fetch every 5 seconds
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(intervalId);
