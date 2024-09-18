@@ -11,7 +11,7 @@ export default function SendChat() {
     const GroupNo = localStorage.getItem('GroupNo')
     // const navigate = useNavigate();
     try{
-      await axios.post('http://localhost:5000/AddChat',{
+      await axios.post('https://chatgroup-server.vercel.app/AddChat',{
         token:token,
         GroupNo:GroupNo,
         Chat:chat
