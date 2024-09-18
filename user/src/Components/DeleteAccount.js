@@ -11,7 +11,7 @@ export default function DeleteAccount() {
     const DeleteAccountBackend = async function (event) {
         event.preventDefault();
         try{
-            const response = await axios.post('http://localhost:5000/DeleteAccount', {
+            const response = await axios.post('https://chatgroup-server.vercel.app/DeleteAccount', {
                 Name: name,
                 Password: password
             });
