@@ -18,10 +18,10 @@ export default function JoinChat() {
         token : token
       })
       alert(response.data.msg+" " +response.data.GroupNo);
-      if(response.data.GroupNo){
+      // if(response.data.GroupNo){
         localStorage.setItem("GroupNo" , response.data.GroupNo)
         navigate('/ChatingGroup')
-      }
+      // }
     }catch(error){
       console.log(error)
     }
