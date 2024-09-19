@@ -587,7 +587,7 @@ button:hover {
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
-  max-height: 60vh;
+  max-height: 60%;
 }
 .DisplayChat-header{
   text-align: center;
