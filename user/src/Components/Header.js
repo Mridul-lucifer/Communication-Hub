@@ -41,19 +41,17 @@ export default function Header() {
     <header className="header">
       <div className="nav-items">
         <button className="header-button" onClick={toHome}>Home</button>
-        <button className="header-button" onClick={toCreateGroup}>Create Group</button>
-        <button className="header-button" onClick={toAddGroup}>Join Group</button>
         <div className="dropdown">
           <button className="dropdown-button" onClick={toggleDropdown}>
-            Other Options
+            Group 
           </button>
           <div className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
+            <button className="dropdown-item" onClick={toCreateGroup}>Create Group</button>
+            <button className="dropdown-item" onClick={toAddGroup}>Join Group</button>
             <button className="dropdown-item" onClick={toDeleteGroup}>Delete Group</button>
-            <button className="dropdown-item" onClick={toDeleteAccount}>Delete Account</button>
-            <button className="dropdown-item">Option 3</button>
-            <button className="dropdown-item">Option 4</button>
           </div>
         </div>
+      <button className="header-button" onClick={toDeleteAccount}>Delete Account</button>
       </div>
       <button className="header-button" onClick={handleLogout}>
         {value}
