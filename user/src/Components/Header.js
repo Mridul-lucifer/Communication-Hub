@@ -43,7 +43,7 @@ export default function Header() {
         <button className="header-button" onClick={toHome}>Home</button>
         <div className="dropdown">
           <button className="dropdown-button" onClick={toggleDropdown}>
-            Group 
+            Groups 
           </button>
           <div className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
             <button className="dropdown-item" onClick={toCreateGroup}>Create Group</button>
@@ -51,7 +51,14 @@ export default function Header() {
             <button className="dropdown-item" onClick={toDeleteGroup}>Delete Group</button>
           </div>
         </div>
-      <button className="header-button" onClick={toDeleteAccount}>Delete Account</button>
+        <div className="dropdown">
+          <button className="dropdown-button" onClick={toggleDropdown}>
+            Accounts
+          </button>
+          <div className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
+            <button className="dropdown-item" onClick={toDeleteAccount}>Delete Account</button>
+          </div>
+        </div>
       </div>
       <button className="header-button" onClick={handleLogout}>
         {value}
