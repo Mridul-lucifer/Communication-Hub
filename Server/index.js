@@ -108,7 +108,7 @@ app.post("/createGroup", verification, async (req, res) => {
         Chats: [],
     });
     await newGroup.save();
-    return res.status(200).json({ msg: "Created " + newGroup.GroupName });
+    return res.status(200).json({ msg: "Created " + newGroup.GroupName ,  GroupNo: group._id });
 });
 
 app.post("/joinChat", verification, async (req, res) => {
