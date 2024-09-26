@@ -17,7 +17,7 @@ export default function JoinChat() {
         Passcode:Passcode,
         token : token
       })
-      alert(response.data.msg+" " +response.data.GroupNo);
+      alert(response.data.msg);
       // if(response.data.GroupNo){
         localStorage.setItem("GroupNo" , response.data.GroupNo)
         navigate('/ChatingGroup')
