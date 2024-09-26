@@ -23,7 +23,7 @@ export default function DeleteAccount() {
                 alert("Something went wrong: " + response.data.msg);
             }
         }catch(e){
-            console.log(e);
+            alert(e);
         }
     }
   return (
