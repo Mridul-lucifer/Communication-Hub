@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="nav-items">
-        <button className="header-button" onClick={toHome}>Home</button>
+        <button className="header-button Home" onClick={toHome}>Home</button>
         
         <div className="dropdown"
              onMouseEnter={() => setDropdownOpenGroups(true)}
