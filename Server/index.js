@@ -99,7 +99,7 @@ app.post("/Login", async (req, res) => {
 app.post("/createGroup", verification, async (req, res) => {
     const existingGroup = await Group.findOne({ GroupName: req.body.GroupName });
     if (existingGroup) {
-        return res.status(400).json({ msg: "Group Name is already used" });
+        return res.status(201).json({ msg: "Group Name is already used" });
     }
 
     const newGroup = new Group({
@@ -108,6 +108,7 @@ app.post("/createGroup", verification, async (req, res) => {
         Chats: [],
     });
     await newGroup.save();
+    const group = await Group.findOne({ GroupName: req.body.GroupName, Passcode: req.body.Passcode });
     return res.status(200).json({ msg: "Created " + newGroup.GroupName ,  GroupNo: group._id });
 });
 
