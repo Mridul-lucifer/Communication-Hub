@@ -277,7 +277,18 @@ button:hover {
   .dropdown-item:hover {
     background-color: #f1f1f1;
   }
-  
+  .dropdown-menu {
+  display: none; /* Hide by default */
+}
+
+.dropdown-menu.open {
+  display: block; /* Show when open */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show on hover */
+}
+
 
 /* Footer styling */
 .footer {
