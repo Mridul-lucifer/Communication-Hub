@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,7 +6,72 @@ body {
     background-color: #f4f4f4;
 }
 
-.Sign-up-Container, .Login-Container {
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0c7dee;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-button, .dropdown-button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.header-button:hover, .dropdown-button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation Styles */
+.Home-Navigation {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.Home-Navigation ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.Home-Navigation li {
+    margin: 5px 0;
+}
+
+.Home-Link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.Home-Link:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.Sign-up-Container, .Login-Container, .CreateGroup-Container, .Join-Chat-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,30 +84,30 @@ body {
     margin-top: 150px;
 }
 
-.Sign-up-Header, .Login-Header {
+.Sign-up-Header, .Login-Header, .CreateGroup-Header, .Join-Chat-Header {
     font-size: 28px;
     color: #333;
     margin-bottom: 20px;
 }
 
-.Sign-up-form-box, .Login-form-box {
+.form-box {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.Sign-up-Name, .Sign-up-Password, .Login-Name, .Login-Password {
+.form-group {
     margin-bottom: 20px;
 }
 
-.Sign-up-Name label, .Sign-up-Password label, .Login-Name label, .Login-Password label {
+.form-group label {
     font-weight: bold;
     color: #555;
     margin-bottom: 5px;
     display: block;
 }
 
-.Sign-up-Name input, .Sign-up-Password input, .Login-Name input, .Login-Password input {
+.form-group input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -51,19 +117,7 @@ body {
     color: #333;
 }
 
-.Sign-up-to-Login-Link, .Login-to-SignIn {
-    display: block;
-    margin: 15px 0;
-    text-align: center;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.Sign-up-to-Login-Link:hover, .Login-to-SignIn:hover {
-    text-decoration: underline;
-}
-
+/* Button Styles */
 button {
     background-color: #007bff;
     color: #fff;
@@ -79,740 +133,103 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* General container styling */
-.Home-Container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Header styling */
-  .Home-Header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .Home-Header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .Home-Description {
-    font-size: 1.2em;
-    color: #555;
-  }
-  
-  /* Features section styling */
-  .Home-Features {
-    margin-bottom: 40px;
-  }
-  
-  .Home-Features h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .Feature-List {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .Feature-Item {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  .Feature-Item h3 {
-    margin-top: 0;
-  }
-  
-  /* Recent Updates section styling */
-  .Home-RecentUpdates {
-    margin-bottom: 40px;
-  }
-  
-  .Home-RecentUpdates h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .Home-RecentUpdates ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .Home-RecentUpdates li {
-    margin-bottom: 20px;
-  }
-  
-  .Home-RecentUpdates h3 {
-    margin: 0 0 5px 0;
-  }
-  
-  .Home-RecentUpdates p {
-    margin: 0;
-  }
-  
-  /* Contact section styling */
-  .Home-Contact {
-    margin-bottom: 40px;
-  }
-  
-  .Home-Contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .Home-Contact p {
-    font-size: 1.2em;
-  }
-  
-  /* Navigation styling */
-  .Home-Navigation {
-    text-align: center;
-  }
-  
-  .Home-Navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .Home-Navigation li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  .Home-Link {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .Home-Link:hover {
-    text-decoration: underline;
-  }
-  
-
-/* Navbar container styling */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #0c7dee; /* Dark background for the navbar */
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Container for nav items */
-  .nav-items {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Styling for all buttons in the navbar */
-  .header-button, .dropdown-button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff; /* Blue button color */
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .header-button:hover, .dropdown-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
-  /* Dropdown container styling */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Styling for the dropdown button */
-  .dropdown-button {
-    background-color: #007bff;
-  }
-  
-  /* Dropdown menu styling */
-  .dropdown-menu {
-    display: none; /* Hide dropdown menu by default */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 200px; /* Set a fixed width for the dropdown menu */
-  }
-  
-  /* Show dropdown menu when dropdown is open */
-  .dropdown-menu.open {
-    display: block;
-  }
-  
-  /* Dropdown menu items styling */
-  .dropdown-item {
-    display: block;
-    padding: 10px 20px;
-    border: none;
-    background-color: #ffffff;
-    color: #333;
-    text-align: left;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect for dropdown items */
-  .dropdown-item:hover {
-    background-color: #f1f1f1;
-  }
-  
-
-/* Footer styling */
+/* Footer Styles */
 .footer {
-  background-color: #f8f9fa; /* Light background color */
-  padding: 20px 0;
-  color: #333;
-  font-size: 14px;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #333;
+    font-size: 14px;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-section {
-  flex: 1;
-  margin-right: 20px;
+    flex: 1;
+    margin-right: 20px;
 }
 
 .footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .footer-section p,
 .footer-section ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-section a {
-  color: #007bff; /* Blue color for links */
-  text-decoration: none;
+    color: #007bff;
+    text-decoration: none;
 }
 
 .footer-section a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .social-links {
-  display: flex;
-  gap: 10px;
-}
-
-.social-link {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.social-link:hover {
-  text-decoration: underline;
+    display: flex;
+    gap: 10px;
 }
 
 .quick-links {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .quick-links li {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
-.footer-bottom {
-  background-color: #e9ecef;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-}
-
-
-
-/* Style.css */
-
-/* General Container Styling */
-.CreateGroup-Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  background-color: #f4f4f9;
-}
-
-.CreateGroup-Header {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-/* Form Box Styling */
-.CreateGroup-form-box {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  max-width: 400px;
-  width: 100%;
-}
-
-.CreateGroup-Name,
-.CreateGroup-Password {
-  margin-bottom: 1rem;
-}
-
-.CreateGroup-Name label,
-.CreateGroup-Password label {
-  display: block;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-.CreateGroup-Name input,
-.CreateGroup-Password input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
-  color: #333;
-}
-
-.CreateGroup-Name input:focus,
-.CreateGroup-Password input:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-
-/* Button Styling */
-button {
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-button:focus {
-  outline: none;
-}
-
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 600px) {
-  .CreateGroup-form-box {
-    padding: 1rem;
-  }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .CreateGroup-Header {
-    font-size: 1.5rem;
-  }
+    .Home-Navigation ul {
+        flex-direction: column;
+    }
 
-  button {
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-  }
+    .Sign-up-Container, 
+    .Login-Container, 
+    .CreateGroup-Container, 
+    .Join-Chat-Container {
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .Sign-up-Header, 
+    .Login-Header, 
+    .CreateGroup-Header, 
+    .Join-Chat-Header {
+        font-size: 1.8rem;
+    }
+
+    .form-box {
+        padding: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
-
-
-
-
-/* Style.css */
-
-/* Container for the Join Chat component */
-.Join-Chat-Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  background-color: #f0f4f8;
-  padding: 20px;
-}
-
-/* Header styling */
-.Join-Chat-Header {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Form box styling */
-.Join-Chat-form-box {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 100%;
-  max-width: 400px;
-}
-
-/* Individual form element styling */
-.Join-Chat-Name,
-.Join-Chat-Password {
-  margin-bottom: 15px;
-}
-
-/* Label styling */
-.Join-Chat-Name label,
-.Join-Chat-Password label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-/* Input field styling */
-.Join-Chat-Name input,
-.Join-Chat-Password input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-/* Button styling */
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 15px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-
-
-/* Style.css */
-
-.SendChat-Container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh; /* Full viewport height */
-  background-color: #f0f0f0; /* Light background color */
-}
-
-.SendChat-form-box {
-  display: flex;
-  align-items: center;
-  background: #ffffff; /* White background for the form */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 16px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.SendChat-input {
-  flex: 1;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-right: 8px;
-}
-
-.SendChat-Button {
-  background-color: #007bff; /* Primary color for the button */
-  color: #ffffff; /* White text color */
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.SendChat-Button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-}
-
-.SendChat-Button:disabled {
-  background-color: #cccccc; /* Disabled state color */
-  cursor: not-allowed;
-}
-
-
-
-/* Style.css */
-/* Style.css */
-
-.DisplayChat-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  max-height: 60%;
-}
-.DisplayChat-header{
-  text-align: center;
-}
-.DisplayChat-box {
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-}
-
-.DisplayChat-myMessage {
-  background-color: #e0f7fa;
-  align-self: flex-end;
-  text-align: right;
-}
-
-.DisplayChat-otherMessage {
-  background-color: #ffffff;
-  align-self: flex-start;
-  text-align: left;
-}
-
-.DisplayChat-id-you {
-  color: #00796b; /* Teal color */
-  font-weight: bold;
-}
-
-.DisplayChat-id {
-  color: #004d40; /* Darker teal color */
-  font-weight: bold;
-}
-
-.DisplayChat-msg-yourmessage {
-  color: #004d40; /* Darker teal color */
-}
-
-.DisplayChat-msg {
-  color: #333;
-}
-
-
-/* Media Query for Mobile Screens */
-@media (max-width: 600px) {
-  .Sign-up-Container, .Login-Container, .CreateGroup-Container, .Join-Chat-Container {
-    padding: 20px;
-    margin-top: 80px;
-  }
-
-  .Sign-up-Header, .Login-Header, .CreateGroup-Header, .Join-Chat-Header {
-    font-size: 1.8rem;
-  }
-
-  .Sign-up-form-box, .Login-form-box, .CreateGroup-form-box, .Join-Chat-form-box {
-    padding: 1rem;
-  }
-
-  .Sign-up-Name, .Sign-up-Password, .Login-Name, .Login-Password, .CreateGroup-Name, .CreateGroup-Password, .Join-Chat-Name, .Join-Chat-Password {
-    margin-bottom: 1rem;
-  }
-
-  .Sign-up-Name input, .Sign-up-Password input, .Login-Name input, .Login-Password input, .CreateGroup-Name input, .CreateGroup-Password input, .Join-Chat-Name input, .Join-Chat-Password input {
-    padding: 0.75rem;
-    font-size: 0.875rem;
-  }
-
-  button {
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-  }
-
-  .Home-Header h1, .Home-Features h2, .Home-RecentUpdates h2, .Home-Contact h2 {
-    font-size: 1.8rem;
-  }
-
-  .Feature-List {
-    flex-direction: column;
-  }
-
-  .Feature-Item {
-    margin-bottom: 1rem;
-  }
-
-  .DisplayChat-container {
-    padding: 10px;
-    max-width: 100%;
-  }
-
-  .DisplayChat-box {
-    flex-direction: column;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .footer-bottom {
-    padding: 10px 0;
-  }
-}
-
-
-/* Media Query for Mobile Screens */
-@media (max-width: 600px) {
-  /* General Container Styling */
-  .Sign-up-Container, 
-  .Login-Container, 
-  .CreateGroup-Container, 
-  .Join-Chat-Container {
-    padding: 20px;
-    margin-top: 80px;
-  }
-
-  .Sign-up-Header, 
-  .Login-Header, 
-  .CreateGroup-Header, 
-  .Join-Chat-Header {
-    font-size: 1.8rem;
-  }
-
-  .Sign-up-form-box, 
-  .Login-form-box, 
-  .CreateGroup-form-box, 
-  .Join-Chat-form-box {
-    padding: 1rem;
-  }
-
-  /* Form Elements */
-  .Sign-up-Name, 
-  .Sign-up-Password, 
-  .Login-Name, 
-  .Login-Password, 
-  .CreateGroup-Name, 
-  .CreateGroup-Password, 
-  .Join-Chat-Name, 
-  .Join-Chat-Password {
-    margin-bottom: 1rem;
-  }
-
-  .Sign-up-Name input, 
-  .Sign-up-Password input, 
-  .Login-Name input, 
-  .Login-Password input, 
-  .CreateGroup-Name input, 
-  .CreateGroup-Password input, 
-  .Join-Chat-Name input, 
-  .Join-Chat-Password input {
-    padding: 0.75rem;
-    font-size: 0.875rem;
-  }
-
-  /* Button Styling */
-  button {
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-  }
-
-  /* Home Section */
-  .Home-Header h1, 
-  .Home-Features h2, 
-  .Home-RecentUpdates h2, 
-  .Home-Contact h2 {
-    font-size: 1.8rem;
-  }
-
-  .Feature-List {
-    flex-direction: column;
-  }
-
-  .Feature-Item {
-    margin-bottom: 1rem;
-  }
-
-  /* Chat Display */
-  .DisplayChat-container {
-    padding: 10px;
-    max-width: 100%;
-  }
-
-  .DisplayChat-box {
-    flex-direction: column;
-  }
-
-  /* Footer */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .footer-bottom {
-    padding: 10px 0;
-  }
-  
-  /* Navbar Styling */
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-items {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-button, 
-  .dropdown-button {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  /* Dropdown Menu */
-  .dropdown-menu {
-    width: 100%; /* Make dropdown full width */
-  }
-}
-
