@@ -252,7 +252,7 @@ button:hover {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 200px; /* Set a fixed width for the dropdown menu */
+    /*width: 200px; /* Set a fixed width for the dropdown menu */
   }
   
   /* Show dropdown menu when dropdown is open */
