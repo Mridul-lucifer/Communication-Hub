@@ -155,7 +155,7 @@ app.post('/DeleteGroup', verification, async (req, res) => {
     return res.status(404).json({ msg: "Group Not Found" });
 });
 
-app.post('/DeleteAccount', verification, async (req, res) => {
+app.post('/DeleteAccount', async (req, res) => {
     const user = await User.findOne({ Name: req.body.Name });
     if (user && bcrypt.compareSync(req.body.Password, user.Password)) {
         await User.deleteOne({ _id: user._id });
