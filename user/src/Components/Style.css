@@ -288,7 +288,11 @@ button:hover {
 .dropdown:hover .dropdown-menu {
   display: block; /* Show on hover */
 }
-
+@media (max-width: 600px){
+    .Home{
+        display : none;
+    }
+}
 
 /* Footer styling */
 .footer {
