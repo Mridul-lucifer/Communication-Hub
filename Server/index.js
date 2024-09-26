@@ -161,7 +161,7 @@ app.post('/DeleteAccount', verification, async (req, res) => {
         await User.deleteOne({ _id: user._id });
         return res.status(200).json({ msg: "Account Deleted Successfully" });
     }
-    return res.status(401).json({ msg: "Account Details might be wrong" });
+    return res.status(201).json({ msg: "Account Details might be wrong" });
 });
 
 app.listen(5000, () => {
