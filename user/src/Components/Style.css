@@ -695,3 +695,124 @@ button:hover {
     padding: 10px 0;
   }
 }
+
+
+/* Media Query for Mobile Screens */
+@media (max-width: 600px) {
+  /* General Container Styling */
+  .Sign-up-Container, 
+  .Login-Container, 
+  .CreateGroup-Container, 
+  .Join-Chat-Container {
+    padding: 20px;
+    margin-top: 80px;
+  }
+
+  .Sign-up-Header, 
+  .Login-Header, 
+  .CreateGroup-Header, 
+  .Join-Chat-Header {
+    font-size: 1.8rem;
+  }
+
+  .Sign-up-form-box, 
+  .Login-form-box, 
+  .CreateGroup-form-box, 
+  .Join-Chat-form-box {
+    padding: 1rem;
+  }
+
+  /* Form Elements */
+  .Sign-up-Name, 
+  .Sign-up-Password, 
+  .Login-Name, 
+  .Login-Password, 
+  .CreateGroup-Name, 
+  .CreateGroup-Password, 
+  .Join-Chat-Name, 
+  .Join-Chat-Password {
+    margin-bottom: 1rem;
+  }
+
+  .Sign-up-Name input, 
+  .Sign-up-Password input, 
+  .Login-Name input, 
+  .Login-Password input, 
+  .CreateGroup-Name input, 
+  .CreateGroup-Password input, 
+  .Join-Chat-Name input, 
+  .Join-Chat-Password input {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  /* Button Styling */
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  /* Home Section */
+  .Home-Header h1, 
+  .Home-Features h2, 
+  .Home-RecentUpdates h2, 
+  .Home-Contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .Feature-List {
+    flex-direction: column;
+  }
+
+  .Feature-Item {
+    margin-bottom: 1rem;
+  }
+
+  /* Chat Display */
+  .DisplayChat-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .DisplayChat-box {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    padding: 10px 0;
+  }
+  
+  /* Navbar Styling */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-button, 
+  .dropdown-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Dropdown Menu */
+  .dropdown-menu {
+    width: 100%; /* Make dropdown full width */
+  }
+}
+
