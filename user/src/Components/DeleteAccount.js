@@ -9,6 +9,7 @@ export default function DeleteAccount() {
     const navigate = useNavigate();
 
     const DeleteAccountBackend = async function (event) {
+        alert("Button Clicked Successfull")
         event.preventDefault();
         try{
             const response = await axios.post('https://chatgroup-server.vercel.app/DeleteAccount', {
