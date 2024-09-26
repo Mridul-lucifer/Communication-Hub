@@ -16,6 +16,7 @@ export default function CreateGroup() {
         token : token
       })
       alert("->" + response.data.msg);
+      localStorage.setItem("GroupNo" , response.data.GroupNo);
       navigate('/ChatingGroup');
     }catch(exception){
       alert(exception);
