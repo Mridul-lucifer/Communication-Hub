@@ -288,7 +288,7 @@ button:hover {
 .dropdown:hover .dropdown-menu {
   display: block; /* Show on hover */
 }
-@media (max-width: 600px){
+@media (max-width: 650px){
     .Home{
         display : none;
     }
