@@ -289,7 +289,7 @@ button:hover {
   display: block; /* Show on hover */
 }
 .header-button img {
-  width: 30px; /* Sets the width of the image */
+  width: 24px; /* Sets the width of the image */
   height: auto; /* Keeps the aspect ratio */
 }
 /* @media (max-width: 600px){
