@@ -215,8 +215,8 @@ button:hover {
   
   /* Styling for all buttons in the navbar */
   .header-button, .dropdown-button {
-    margin: 0 10px;
-    padding: 10px 20px;
+    margin: 0 8px;
+    padding: 10px 15px;
     border: none;
     background-color: #007bff; /* Blue button color */
     color: white;
