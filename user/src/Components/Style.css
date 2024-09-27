@@ -292,11 +292,11 @@ button:hover {
   width: 30px; /* Sets the width of the image */
   height: auto; /* Keeps the aspect ratio */
 }
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     .Home{
         display : none;
     }
-}
+} */
 
 /* Footer styling */
 .footer {
