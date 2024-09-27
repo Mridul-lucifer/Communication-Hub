@@ -34,7 +34,8 @@ export default function Header() {
     <header className="header">
       <div className="nav-items">
         <button className="header-button Home" onClick={toHome}>Home</button>
-        
+        <button className="header-button Home" onClick={toHome}><img src="https://img.icons8.com/?size=100&id=84005&format=png&color=000000" alt="Home"></button>
+                
         <div className="dropdown"
              onMouseEnter={() => setDropdownOpenGroups(true)}
              onMouseLeave={() => setDropdownOpenGroups(false)}>
