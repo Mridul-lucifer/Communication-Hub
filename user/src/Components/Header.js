@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="nav-items">
-        <button className="header-button Home" onClick={toHome}><img src="https://p1.hiclipart.com/preview/233/734/334/free-144-minimal-icons-package-home-png-icon.jpg" alt="Home" /></button>
+        <button className="header-button Home" onClick={toHome}><img src="https://static.vecteezy.com/system/resources/thumbnails/048/301/781/small/white-abstract-house-3d-christmas-high-design-with-windows-and-roof-png.png" alt="Home" /></button>
                 
         <div className="dropdown"
              onMouseEnter={() => setDropdownOpenGroups(true)}
