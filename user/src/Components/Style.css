@@ -541,7 +541,7 @@ button:hover {
 /* Style.css */
 
 .SendChat-Container {
-  display: fixed;
+  display: sticky;
   bottom: 0;
   justify-content: center;
   align-items: center;
