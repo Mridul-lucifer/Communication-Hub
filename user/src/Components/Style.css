@@ -541,8 +541,7 @@ button:hover {
 /* Style.css */
 
 .SendChat-Container {
-  display: fixed;
-  bottom: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 20vh; /* Full viewport height */
