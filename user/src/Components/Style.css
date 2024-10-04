@@ -204,7 +204,8 @@ button:hover {
     padding: 10px 20px;
     background-color: #0c7dee; /* Dark background for the navbar */
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   }
   
   /* Container for nav items */
@@ -614,11 +615,18 @@ button:hover {
   max-height: 60%;
 }
 .DisplayChat-header{
+  max-width: 600px;
+  position: sticky;
+  padding: 10px;
+  top: 0;
+  margin: auto;
+  background-color: #F4F4F4;
+  backdrop-filter: blur(10px);
   text-align: center;
+  z-index: 10;
 }
 .DisplayChat-box {
-  margin-bottom: 10px;
-  padding: 10px;
+  padding: 2px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -628,6 +636,8 @@ button:hover {
   background-color: #e0f7fa;
   align-self: flex-end;
   text-align: right;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .DisplayChat-otherMessage {
@@ -647,7 +657,7 @@ button:hover {
 }
 
 .DisplayChat-msg-yourmessage {
-  color: #004d40; /* Darker teal color */
+  color: #004d40; 
 }
 
 .DisplayChat-msg {
@@ -698,6 +708,7 @@ button:hover {
 
   .DisplayChat-container {
     padding: 10px;
+    padding-bottom: 10vh;
     max-width: 100%;
   }
 
