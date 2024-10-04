@@ -550,6 +550,10 @@ button:hover {
   align-items: center;
   height: 20vh; /* Full viewport height */
   background-color: #f0f0f0; /* Light background color */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .SendChat-form-box {
