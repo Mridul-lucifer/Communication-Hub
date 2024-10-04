@@ -15,7 +15,6 @@ export default function Displaychat() {
           token:token,
           GroupNo:GroupNo
         })
-        console.log(response.data);
         setarray(response.data.array)
         setMyName(response.data.Name)
         setGroupName(response.data.GroupName)

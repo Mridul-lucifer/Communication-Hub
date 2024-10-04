@@ -23,6 +23,10 @@ export default function SendChat() {
     }catch(error){
       alert(error)
     }
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth' 
+    });    
   }
   return (
     <div>
