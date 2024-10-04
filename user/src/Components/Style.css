@@ -607,6 +607,7 @@ button:hover {
   max-width: 600px;
   margin: auto;
   padding: 10px;
+  padding-bottom: 10vh;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
