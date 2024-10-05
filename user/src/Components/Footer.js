@@ -16,32 +16,16 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Contact Us</h4>
           <p>
-            Email: <a href="mailto:support@example.com">support@example.com</a><br />
-            Phone: +1 (555) 123-4567
+            Email: 
+            <li><a href="mailto:mridli1940.be22@chitkara.edu.in">mridul1940.be22@chitkara.edu.in</a></li>
+            <li><a href="mailto:mridul1889@gmail.com">mridul1889@gmail.com</a></li>
           </p>
         </div>
 
-        <div className="footer-section">
-          <h4>Follow Us</h4>
-          <div className="social-links">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-link">Facebook</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">Twitter</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
-          </div>
-        </div>
-
-        <div className="footer-section">
-          <h4>Quick Links</h4>
-          <ul className="quick-links">
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <p>&copy; Communication Hub</p>
       </div>
     </footer>
   );
