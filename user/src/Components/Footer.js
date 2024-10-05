@@ -17,7 +17,7 @@ export default function Footer() {
           <h4>Contact Us</h4>
           <p>
             Email: 
-            <li><a href="mailto:mridli1940.be22@chitkara.edu.in">mridul1940.be22@chitkara.edu.in</a></li>
+            <li><a href="mailto:mridul1940.be22@chitkara.edu.in">mridul1940.be22@chitkara.edu.in</a></li>
             <li><a href="mailto:mridul1889@gmail.com">mridul1889@gmail.com</a></li>
           </p>
         </div>
