@@ -720,12 +720,15 @@ button:hover {
 
   .footer-container {
     flex-direction: column;
-    align-items: center;
   }
 
   .footer-section {
-    margin-right: 0;
+    text-align: justify;
+    margin-right: 20px;
     margin-bottom: 20px;
+  }
+  .footer-section li {
+    margin-left: 20px;
   }
 
   .footer-bottom {
