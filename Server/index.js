@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -5,13 +6,13 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
 const app = express();
-const secret_key = "erthnjmrghuhdfg45678$%YHK(IUG%YUIOL{::L:LLPLPKPKKOPOUGFDrytf*&*&^%%$%45456454765";
+const secret_key = process.env.SECRET_KEY;
 
 app.use(express.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://mridul4332:QNNDMvzlMraGJ9qI@cluster0.sr67g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
