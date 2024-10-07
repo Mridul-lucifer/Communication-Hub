@@ -24,13 +24,13 @@ export default function Home() {
           <div className="Feature-Item">
             <h3>Join Group</h3>
             <p>
-              Once create a gruop you share the Group Name and Passcode to other team members . To join a group <Link to="/AddGroup">click here</Link>
+              Once create a group you share the Group Name and Passcode to other team members . To join a group <Link to="/AddGroup">click here</Link>.
             </p>
           </div>
           <div className="Feature-Item">
             <h3>Delete Group</h3>
             <p>
-              After successful usage of the group for team or project , you can easily delete a group chat premently from system by <Link to="/DeleteGroup">clicking here</Link>
+              After successful usage of the group for team or project , you can easily delete a group chat permanently from system . To delete group <Link to="/DeleteGroup">click here</Link>.
             </p>
           </div>
           <div className="Feature-Item">

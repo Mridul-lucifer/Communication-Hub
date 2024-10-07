@@ -330,7 +330,10 @@ button:hover {
   margin: 0;
   padding: 0;
 }
-
+.footer-aboutus-p{
+  max-width: 390px;
+  text-align: justify;
+}
 .footer-section a {
   color: #007bff; /* Blue color for links */
   text-decoration: none;
@@ -466,6 +469,9 @@ button:focus {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
   }
+  .footer-aboutus-p{
+    width: 100%;
+  }
 }
 
 
@@ -564,7 +570,7 @@ button:hover {
   border-radius: 0 0 8px 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   padding: 10px;
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
 }
 
@@ -605,17 +611,18 @@ button:hover {
 .DisplayChat-container {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 800px;
+  min-height:70vh;
   margin: auto;
   padding: 10px;
   padding-bottom: 10vh;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #F4F4F4;
+  background-color: rgba(12, 125, 238,0.5);
   max-height: 60%;
 }
 .DisplayChat-header{
-  max-width: 600px;
+  /* max-width: inherit; */
   position: sticky;
   padding: 10px;
   top: 0;
@@ -740,6 +747,9 @@ button:hover {
   border-left: 10px solid #007bff ;
   background-color: rgba(0, 123, 255 , 0.4);
   padding: 5px 0;
+}
+.Home-Header h1:hover{
+  text-shadow: 3px 3px 3px rgba(255, 255, 255,0.5);
 }
 
 .Home-Description{

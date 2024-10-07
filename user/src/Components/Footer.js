@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <h4>About Us</h4>
-          <p>
+          <p className="footer-aboutus-p">
             We are a web collaboration platform that helps teams work together efficiently from anywhere in the world.
             Our tools are designed to improve productivity and streamline communication.
           </p>
