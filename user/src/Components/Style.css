@@ -644,15 +644,14 @@ button:hover {
 .DisplayChat-myMessage {
   background-color: #e0f7fa;
   align-self: flex-end;
-  text-align: right;
   padding: 10px;
   border-radius: 5px;
+  word-break: break-all;
 }
 
 .DisplayChat-otherMessage {
   background-color: #ffffff;
   align-self: flex-start;
-  text-align: left;
   padding: 10px;
   border-radius: 5px;
 }
@@ -675,6 +674,14 @@ button:hover {
   color: #333;
 }
 
+.chat-time-myMessage, .chat-time-otherMessage {
+  display: block;
+  font-size: 12px;
+  margin: 5px 0 0 0;
+}
+.chat-time-myMessage {
+  text-align: right;
+}
 
 /* Media Query for Mobile Screens */
 @media (max-width: 600px) {
