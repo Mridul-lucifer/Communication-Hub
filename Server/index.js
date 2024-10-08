@@ -4,7 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const { format } = require('date-fns');
+const { format, addHours, addMinutes } = require('date-fns');
 const app = express();
 const secret_key = process.env.SECRET_KEY;
 
@@ -127,7 +127,7 @@ app.post("/AddChat", verification, async (req, res) => {
         const chat = {
             Name: req.user.Name,
             msg: req.body.Chat,
-            timestamp: format(new Date(), 'MMM d, h:mm a')
+            timestamp: format(addMinutes(addHours(new Date(), 5), 30), 'MMM d, h:mm a')
         };
         group.Chats.push(chat);
         await group.save();
@@ -165,7 +165,8 @@ app.post('/DeleteAccount', async (req, res) => {
     }
     return res.status(201).json({ msg: "Account Details might be wrong" });
 });
-
+  
 app.listen(5000, () => {
-    console.log("Server Running");
+    console.log("Server Running on port "+5000);
 });
+  
