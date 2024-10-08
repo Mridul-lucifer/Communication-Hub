@@ -39,7 +39,7 @@ export default function Displaychat() {
           >
             {chat.Name === myName ? (
               <div className='DisplayChat-myMessage'>
-                <span className='DisplayChat-msg-yourmessage'>{chat.msg}</span>
+                <span className='DisplayChat-msg-yourmessage'>{chat.msg} <sub>{chat.timestamp}</sub></span>
                 {/* <span className='DisplayChat-id-you'>(You)</span> */}
               </div>
             ) : (
