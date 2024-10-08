@@ -45,7 +45,7 @@ export default function Displaychat() {
             ) : (
               <div className='DisplayChat-otherMessage'>
                 <span className='DisplayChat-id'>{chat.Name} </span>
-                <span className='DisplayChat-msg'>{chat.msg}</span>
+                <span className='DisplayChat-msg'>{chat.msg} <sub>{chat.timestamp}</sub></span>
               </div>
             )}
           </div>
