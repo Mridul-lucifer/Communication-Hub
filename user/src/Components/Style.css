@@ -666,6 +666,8 @@ button:hover {
 .DisplayChat-id {
   color: #004d40; /* Darker teal color */
   font-weight: bold;
+  display:inline-block;
+  width: 10vh;
 }
 
 .DisplayChat-msg-yourmessage {
@@ -674,6 +676,7 @@ button:hover {
 
 .DisplayChat-msg {
   color: #333;
+  word-wrap: break-word;
 }
 
 .chat-time-myMessage, .chat-time-otherMessage {
