@@ -4,9 +4,20 @@ import axios from 'axios'
 import './Style.css'
 export default function Signup() {
     let [name,setname] = useState("Enter Name");
-    let [password,setpassword] = useState("Enter Password")
+    let [password,setPassword] = useState("Enter Password")
+    let [message,setMessage] = useState("");
     const navigate = useNavigate();
-
+    const passwordChanged = function(password) {
+        if (password.length < 8) {
+            setMessage("Password needs to be at least 8 characters long.");
+            return;
+        }
+        if (!/[a-z]/.test(password) || !/[A-Z]/.test(password) || !/[0-9]/.test(password)) {
+            setMessage("Password must contain lower case, upper case, and numerical values.");
+            return;
+        }
+        setMessage("Valid password.");
+    };
     const SignUpBackend = async function(event){
         event.preventDefault(); 
         try {
@@ -48,7 +59,8 @@ export default function Signup() {
                 </div>
                 <div className='Sign-up-Password'>
                     <label>Password : </label>
-                    <input type='password' onChange={(event)=>setpassword(event.target.value)}></input>
+                    <input type='password' onChange={(event) => {const newPassword = event.target.value;setPassword(newPassword);passwordChanged(newPassword);}} />
+                    <div className="Sign-up-warning">{message}</div>
                 </div>
                 <Link className='Sign-up-to-Login-Link' to="/Login"> Already Account  </Link>
                 <button>Submit</button>
