@@ -9,10 +9,12 @@ export default function Signup() {
     const navigate = useNavigate();
     const passwordChanged = function(password) {
         if (password.length < 8) {
+            document.getElementsByClassName("Sign-up-warning")[0].style.color = "red";
             setMessage("Password needs to be at least 8 characters long.");
             return;
         }
         if (!/[a-z]/.test(password) || !/[A-Z]/.test(password) || !/[0-9]/.test(password)) {
+            document.getElementsByClassName("Sign-up-warning")[0].style.color = "red";
             setMessage("Password must contain lower case, upper case, and numerical values.");
             return;
         }
