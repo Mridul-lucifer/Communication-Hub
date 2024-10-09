@@ -16,6 +16,7 @@ export default function Signup() {
             setMessage("Password must contain lower case, upper case, and numerical values.");
             return;
         }
+        document.getElementsByClassName("Sign-up-warning")[0].style.color = "green";
         setMessage("Valid password.");
     };
     const SignUpBackend = async function(event){
