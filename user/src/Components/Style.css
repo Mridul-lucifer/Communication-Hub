@@ -672,7 +672,7 @@ button:hover {
   color: #004d40; /* Darker teal color */
   font-weight: bold;
   display:inline-block;
-  width: 10vh;
+  /* width: 10vh; */
 }
 
 .DisplayChat-msg-yourmessage {
