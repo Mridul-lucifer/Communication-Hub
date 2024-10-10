@@ -651,7 +651,6 @@ button:hover {
   align-self: flex-end;
   padding: 10px;
   border-radius: 5px;
-  word-break: break-all;
   max-width: 80%;
 }
 
@@ -671,7 +670,9 @@ button:hover {
 .DisplayChat-id {
   color: #004d40; /* Darker teal color */
   font-weight: bold;
-  display:inline-block;
+  font-size: 12px;
+  display: block;
+  margin: 0 0 5px 0;
   /* width: 10vh; */
 }
 
@@ -684,12 +685,14 @@ button:hover {
   word-wrap: break-word;
 }
 
+.DisplayChat-container p{
+  margin: 0;
+  word-wrap: break-word;
+}
 .chat-time-myMessage, .chat-time-otherMessage {
   display: block;
   font-size: 12px;
   margin: 5px 0 0 0;
-}
-.chat-time-myMessage {
   text-align: right;
 }
 
