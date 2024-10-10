@@ -11,12 +11,17 @@ export default function SendChat() {
     const GroupNo = localStorage.getItem('GroupNo')
     // const navigate = useNavigate();
     try{
+      let msg = chat;
+      setChat("");
+      msg = msg.trim();
+      if(msg.length===0){
+        return ;
+      }
       await axios.post('https://chatgroup-server.vercel.app/AddChat',{
         token:token,
         GroupNo:GroupNo,
-        Chat:chat
+        Chat:msg
       })
-      setChat("")
       // alert(response.data.msg);
       // navigate('/ChatingGroup');
       // window.location.reload();
@@ -32,7 +37,7 @@ export default function SendChat() {
     <div>
       <div className='SendChat-Container'>
         <form className='SendChat-form-box' onSubmit={SendChatBackend}>
-          <input type='text' className='SendChat-input' value={chat} placeholder='Enter Message' onChange={(event)=>setChat(event.target.value)} required ></input>
+          <input type='text' className='SendChat-input' value={chat} placeholder='Enter Message' onChange={(event)=>setChat(event.target.value)} ></input>
           <button className='SendChat-Button'>Send</button>
         </form>
       </div>
