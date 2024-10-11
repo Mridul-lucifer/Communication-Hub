@@ -23,7 +23,7 @@ export default function Displaychat() {
       }
     }
     DisplayChatBackend();
-    const intervalId = setInterval(DisplayChatBackend, 1000);
+    const intervalId = setInterval(DisplayChatBackend, 100);
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(intervalId);
