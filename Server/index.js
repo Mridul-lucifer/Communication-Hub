@@ -118,7 +118,7 @@ app.post("/joinChat", verification, async (req, res) => {
     if (group) {
         return res.status(200).json({ msg: "Found Group", GroupNo: group._id });
     }
-    return res.status(404).json({ msg: "Group Not Found" });
+    return res.status(200).json({ msg: "Group Not Found" });
 });
 
 app.post("/AddChat", verification, async (req, res) => {

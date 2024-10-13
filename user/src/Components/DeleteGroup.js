@@ -25,7 +25,7 @@ export default function DeleteGroup() {
     return (
       <div>
         <div className='CreateGroup-Container'>
-              <h2 className='CreateGroup-Header'> Create Group </h2>
+              <h2 className='CreateGroup-Header'> Delete Group </h2>
               <form className='CreateGroup-form-box' onSubmit={CreateGroupBackend}>
                   <div className='CreateGroup-Name'>
                       <label>Group Name : </label>
