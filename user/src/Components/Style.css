@@ -677,6 +677,8 @@ button:hover {
 }
 
 .DisplayChat-msg-yourmessage {
+  min-width: 100%;
+  text-align: right;
   color: #004d40; 
 }
 
